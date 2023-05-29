@@ -1,0 +1,31 @@
+server:
+  port: 9005
+
+spring:
+  application:
+    name: feedback-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/employeetestdb?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
+    username: root
+    password: 12345
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mail: 
+    host: smtp.gmail.com
+    port: 587
+    username: abhisharma13900@gmail.com
+    password: awqwisoqmhubudwm
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    
+eureka:
+  instance:
+    hostname: localhost
+    

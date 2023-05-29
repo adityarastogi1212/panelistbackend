@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: candidate-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/employeetestdb?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
+    username: root
+    password: 12345
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    
+server:
+  port: 8084
+
+eureka:
+  instance:
+    hostname: localhost
